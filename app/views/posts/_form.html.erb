@@ -1,0 +1,11 @@
+<%= form_for @post do |f| %>
+
+  <p>記事タイトル： <%= f.text_field :title %></p>
+
+  <p>記事カテゴリ： <%= f.text_field :category %></p>
+
+  <p>記事本文： <%= f.text_area :body %></p>
+
+  <%= f.submit %>
+
+<% end %>

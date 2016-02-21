@@ -1,0 +1,5 @@
+<h1><%= @post.title %></h1>
+<p><%= @post.body %></p>
+<p><%= @post.category %></p>
+<%= link_to '記事を編集する', edit_post_path(@post.id) %>
+<%= link_to '記事を削除する', post_path(@post.id), method: :delete %>
